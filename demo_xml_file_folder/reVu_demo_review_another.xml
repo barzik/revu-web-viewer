@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<review xmlns="http://plugins.intellij.net/revu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://plugins.intellij.net/revu http://plugins.intellij.net/revu/ns/revu_1_0.xsd" name="reVu demo review" status="fixing" shared="true">
+  <history createdBy="[unknown]" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:02:30 +0200" lastUpdatedOn="2015-01-10 10:16:28 +0200"/>
+  <goal>This is demo reVu review, intended to show the reVu web viewer capabilities.</goal>
+  <referential>
+    <priorities>
+      <priority order="0" name="Severe"/>
+      <priority order="1" name="High"/>
+      <priority order="2" name="Medium"/>
+      <priority order="3" name="Low"/>
+    </priorities>
+    <tags/>
+    <users>
+      <user displayName="Moshe Cohen" login="Moshe Cohen" roles="reviewer,author"/>
+      <user displayName="Ran Bar-Zik" login="Ran Bar-Zik" roles="admin,reviewer,author"/>
+      <user displayName="Yakkov Levi" login="Yakkov Levi" roles="reviewer,author"/>
+    </users>
+  </referential>
+  <filescope pathPattern="file[internetisrael]:wp-content/plugins/wp-tutorial-maker/*"/>
+  <issues>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/README.txt" summary="Add Moshe as contributor" vcsRev="3fa89b1e3c657a5f9e24f46d2b6a6496d5016797" lineStart="1" lineEnd="1" hash="-666007577" priority="Severe" status="to_resolve" assignees="Yakkov Levi">
+      <history createdBy="Moshe Cohen" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:11:32 +0200" lastUpdatedOn="2015-01-10 10:14:13 +0200"/>
+    </issue>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/README.txt" summary="Chnage tested up to string to appropriate value" vcsRev="3fa89b1e3c657a5f9e24f46d2b6a6496d5016797" lineStart="4" lineEnd="4" hash="480921759" priority="High" status="to_resolve" assignees="Moshe Cohen">
+      <history createdBy="Ran Bar-Zik" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:13:56 +0200" lastUpdatedOn="2015-01-10 10:14:16 +0200"/>
+    </issue>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/tests/test_wp_tutorial_maker_tests.php" summary="The test name should be changed" vcsRev="440ea9fec3cdc5c4db6c982c230f5634a8db2d44" lineStart="7" lineEnd="7" hash="1657926642" priority="Low" status="to_resolve">
+      <history createdBy="Ran Bar-Zik" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:06:51 +0200" lastUpdatedOn="2015-01-10 10:06:51 +0200"/>
+      <desc>the test name is not descriptive enough</desc>
+    </issue>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/tests/test_wp_tutorial_maker_tests.php" summary="This function is not testing all cases of CSS files" vcsRev="440ea9fec3cdc5c4db6c982c230f5634a8db2d44" lineStart="26" lineEnd="26" hash="-1678736596" priority="Medium" status="to_resolve" assignees="Ran Bar-Zik">
+      <history createdBy="Ran Bar-Zik" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:07:56 +0200" lastUpdatedOn="2015-01-10 10:14:27 +0200"/>
+      <desc>There are more valid cases for testing here</desc>
+    </issue>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/tests/test_wp_tutorial_maker_tests.php" summary="Please change the file position" vcsRev="440ea9fec3cdc5c4db6c982c230f5634a8db2d44" lineStart="-1" lineEnd="-1" hash="57399061" priority="Medium" status="resolved" assignees="Moshe Cohen">
+      <history createdBy="Ran Bar-Zik" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:08:27 +0200" lastUpdatedOn="2015-01-10 10:14:23 +0200"/>
+      <desc>The file should be elsewhere</desc>
+    </issue>
+    <issue filePath="wp-content/plugins/wp-tutorial-maker/uninstall.php" summary="Please add functionality to uninstall function" vcsRev="52eb94c30ca2698f1b866aaab28fecade1d923d8" lineStart="58" lineEnd="58" hash="0" priority="High" status="to_resolve" assignees="Ran Bar-Zik">
+      <history createdBy="Ran Bar-Zik" lastUpdatedBy="Ran Bar-Zik" createdOn="2015-01-10 10:10:45 +0200" lastUpdatedOn="2015-01-10 10:14:20 +0200"/>
+      <desc>Bad function is bad</desc>
+    </issue>
+  </issues>
+</review>
