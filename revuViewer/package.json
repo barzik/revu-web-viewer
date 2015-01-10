@@ -9,13 +9,13 @@
   "author": "Your Name <mail@mail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/barzik/nodejs-boilerplate.git"
+    "url": "https://github.com/barzik/revu-web-viewer"
   },
   "bugs": {
-    "url": "https://github.com/barzik/nodejs-boilerplate/issues"
+    "url": "https://github.com/barzik/revu-web-viewer/issues"
   },
   "dependencies": {
-      "xml2js" : "~0.4.4"
+    "xml2js": "~0.4.4"
   },
   "config": {
     "native": false
@@ -27,9 +27,11 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter list"
   },
-    "devDependencies": {
-        "mocha": "~1.21.4",
-        "socket.io-client": "~1.1.0"
-    },
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "socket.io-client": "~1.1.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0"
+  },
   "license": "BSD-2-Clause"
 }
