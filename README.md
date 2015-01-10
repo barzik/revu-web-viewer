@@ -17,6 +17,10 @@ Quite self explanatory
     
 After initiating it (node app.js), you may go to IP:port or localhost:port.
 There some demo reVu XML file in the demo directory.
+
+## Demo 
+
+Here it is: [Demo on Heroku](https://infinite-shore-1165.herokuapp.com/)
 	
 ## How to test
 
