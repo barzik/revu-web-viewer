@@ -1,14 +1,17 @@
 h1 {
     text-align: center;
+    margin: 0;
 }
 section {
-    border-bottom: 1px solid silver;
     border-top: 1px solid silver;
-    margin: auto;
+    display: inline-block;
+    margin: 0.5%;
     text-align: center;
-    width: 80%;
+    vertical-align: top;
+    width: 48%;
 }
 section > h2 {
+    background-color: yellow;
     margin: 0 auto;
 }
 section div > h2 {
@@ -16,12 +19,14 @@ section div > h2 {
     font-size: large;
 }
 ul {
-    list-style: none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
 }
-ul li {
-    position: block;
+ul li:first-child {
+    color: darkgreen;
+}
 
-}
 ul li:first-child:before {
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAJgQAACYEBh1gGjwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADSSURBVCiRpdI/akJBEAbw35N0ipUnSGsjHkC7NJbe6N0iRW5gLwQvkM7KIrwLSE5gNTbzHstjJYYMfLAz359dlmkiQq2apmnwme1bPBLiFduIUAJTXBPTCr9Nrw6BZUXUoq3Ml+np4IAfzEaiCb4TkxE3S8+hHxyxGYn2eUtgP+I2OEaE8qlXrLOf41IEXDBPbp3atgzYpfCGd5wLc49zcrfsd2XAomL4DYshIEO6P5i73jcp9uGrsiOPatD+O+ClGJ7w8WTAaTgVf7Dy/B+set8dBL/ccJQf4DUAAAAASUVORK5CYII3c91162a86cc706a1eeb9ecbad0aa2bb");
     background-repeat: no-repeat;
@@ -34,4 +39,19 @@ ul li:first-child:before {
 
 .top-issues ul li:first-child:before {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAHCAAABwgHoPH1UAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAGNQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf7bw3gAAACF0Uk5TAAEHCQoMDQ8VGiAiMzRFS1BSaHCPkpidoKepqrW5vdfkr5gpgAAAAHNJREFUGJVtj9kSAjEIBNtjxQuPoBDPzf9/pQ/GWFact+kCZoC/UsvZtNnBi6fkxYfqxxAAifFNPD6j4QBahMURdiukKGAO2+uE8x7cgJy+aSk3MF82YA7Ty/32WNcVLcLpAJtnPYoHAjCrsX2xrnr/3I9e/ewHmiBEK7sAAAAASUVORK5CYIIe5853cd27bec0127b18e6e2f0197ee44');
+    height: 16px;
+}
+
+.top-issues ul li:first-child {
+    color: darkred;
+}
+
+small {
+    font-size: xx-small;
+}
+
+section > div {
+    display: inline-block;
+    margin: 5px 15px;
+    vertical-align: top;
 }

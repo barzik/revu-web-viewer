@@ -275,9 +275,9 @@ function CreateHTMLOfPage(html) {
     "<html> " +
     "<head><title>reVu Web Viewer</title>" + meta_tags + style_tag +
     "</head>" +
-    "<body><h1>" + this.title + "</h1>" +
+    "<body><h1>" + this.title + "</h1><article>" +
         html
-    + "<small><div>Icons made by <a href='http://www.freepik.com' title='Freepik'>Freepik</a> from <a href='http://www.flaticon.com' title='Flaticon'>www.flaticon.com</a> is licensed under <a href='http://creativecommons.org/licenses/by/3.0/' title='Creative Commons BY 3.0'>CC BY 3.0</a></div></small>" +
+    + "</article><small><div>Icons made by <a href='http://www.freepik.com' title='Freepik'>Freepik</a> from <a href='http://www.flaticon.com' title='Flaticon'>www.flaticon.com</a> is licensed under <a href='http://creativecommons.org/licenses/by/3.0/' title='Creative Commons BY 3.0'>CC BY 3.0</a></div></small>" +
     "</body></html>";
 
     return result;
